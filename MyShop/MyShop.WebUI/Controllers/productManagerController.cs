@@ -11,13 +11,14 @@ namespace MyShop.WebUI.Controllers
 {
     public class productManagerController : Controller
     {
-        ProductRepository context;
-        ProductCategoryRepository ProductCategories;
+
+        InMemoryRepository<Product> context;
+        InMemoryRepository<ProductCategory>  ProductCategories;
 
         public productManagerController()
         {
-            context = new ProductRepository();
-            ProductCategories = new ProductCategoryRepository();
+            context = new InMemoryRepository<Product>();
+            ProductCategories = new InMemoryRepository<ProductCategory>();
         }
         // GET: productManager
         public ActionResult Index()
@@ -59,7 +60,7 @@ namespace MyShop.WebUI.Controllers
             else
             {
                 ProductManagerViewModel viewModel = new ProductManagerViewModel();
-                viewModel.product = new Product();
+                viewModel.product = product;
                 viewModel.ProductCategories = ProductCategories.Collection();
                 return View(viewModel);
             }
