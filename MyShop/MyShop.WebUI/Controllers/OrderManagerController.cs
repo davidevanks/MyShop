@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace MyShop.WebUI.Controllers
 {
+    [Authorize]
     public class OrderManagerController : Controller
     {
         IOrderService orderService;
