@@ -31,6 +31,7 @@ _Instalar Visual Studio 2019 y SQL Server_
 * Lenguaje backend C#
 * Patrón repositorio
 * Code first
+* EntityFramwork
 
 
 ## Autores ✒️
