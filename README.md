@@ -30,7 +30,7 @@ _Instalar Visual Studio 2019 y SQL Server_
 * [BOOTSTRAP](https://getbootstrap.com/) 
 * Lenguaje backend C#
 * Patrón repositorio
-
+* Code first
 
 
 ## Autores ✒️
